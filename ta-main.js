@@ -23,7 +23,7 @@ function updateProgressBar() {
   const pct = (window.scrollY / docH) * 100;
   progressFill.style.width = pct + '%';
 
-  const sectionIds = ['hero', 'about', 'experience', 'skills', 'projects', 'contact'];
+  const sectionIds = ['hero', 'about', 'experience', 'skills', 'coding', 'projects', 'resume', 'contact'];
   let activeIdx = 0;
   sectionIds.forEach((id, i) => {
     const el = document.getElementById(id);
@@ -264,7 +264,7 @@ marker.bindPopup(`
       <strong>Graphic Era Hill University</strong>
       <span>B.Tech Computer Science</span>
       <small>Dehradun, Uttarakhand</small>
-      <small>2022 – Present</small>
+      <small>2024 – Present</small>
     </div>
   </div>
 `);
@@ -286,3 +286,29 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
   });
 });
+
+// ── STAT COUNT-UP ──
+function animateStat(el) {
+  const target = parseFloat(el.dataset.target || '0');
+  const decimals = parseInt(el.dataset.decimals || '0', 10);
+  const suffix = el.dataset.suffix || '';
+  const duration = 1300;
+  const start = performance.now();
+  function tick(now) {
+    const p = Math.min(1, (now - start) / duration);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = (target * eased).toFixed(decimals) + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+    else el.textContent = target.toFixed(decimals) + suffix;
+  }
+  requestAnimationFrame(tick);
+}
+const statNumbers = document.querySelectorAll('.stat-number');
+if (statNumbers.length) {
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { animateStat(e.target); statObserver.unobserve(e.target); }
+    });
+  }, { threshold: 0.5 });
+  statNumbers.forEach(el => statObserver.observe(el));
+}

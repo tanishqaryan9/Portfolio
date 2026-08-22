@@ -8,9 +8,9 @@
   <title>Tanishq Aryan | Software Developer & CS Student</title>
   <meta name="title" content="Tanishq Aryan | Software Developer & CS Student">
   <meta name="description"
-    content="Computer Science student based in Dehradun, India, with hands-on experience building backend systems and microservices. Proficient in Spring Boot, Python, and Flutter.">
+    content="Computer Science student based in Dehradun, India, building backend systems, microservices, and AI-powered full-stack apps. Proficient in Spring Boot, Spring AI, React, and Docker.">
   <meta name="keywords"
-    content="Tanishq Aryan, Software Developer, Spring Boot, Flutter, Python, Microservices, Backend, Dehradun, India, Docker">
+    content="Tanishq Aryan, Software Developer, Spring Boot, Spring AI, GenAI, React, Flutter, Python, Microservices, Backend, Data Structures and Algorithms, DSA, Dehradun, India, Docker">
   <meta name="author" content="Tanishq Aryan">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
@@ -67,7 +67,7 @@
       "addressCountry": "India"
     },
     "alumniOf": { "@type": "EducationalOrganization", "name": "Graphic Era Hill University" },
-    "knowsAbout": ["Spring Boot","Python","Flutter","Firebase","Docker","MySQL","PostgreSQL","Microservices","REST APIs","Git"],
+    "knowsAbout": ["Spring Boot","Spring Cloud","Spring AI","React","Python","Flutter","Apache Kafka","Redis","Docker","PostgreSQL","Microservices","Distributed Systems","REST APIs","Data Structures and Algorithms","Git"],
     "sameAs": [
       "https://github.com/tanishqaryan9",
       "https://linkedin.com/in/tanishq-aryan-3a4a22311",
@@ -135,7 +135,13 @@
         <div class="checkpoint" data-section="skills">
           <div class="checkpoint-dot"></div>
         </div>
+        <div class="checkpoint" data-section="coding">
+          <div class="checkpoint-dot"></div>
+        </div>
         <div class="checkpoint" data-section="projects">
+          <div class="checkpoint-dot"></div>
+        </div>
+        <div class="checkpoint" data-section="resume">
           <div class="checkpoint-dot"></div>
         </div>
         <div class="checkpoint" data-section="contact">
@@ -153,7 +159,9 @@
           <a href="#about" class="nav-link">About</a>
           <a href="#experience" class="nav-link">Journey</a>
           <a href="#skills" class="nav-link">Skills</a>
+          <a href="#coding" class="nav-link">Coding</a>
           <a href="#projects" class="nav-link">Projects</a>
+          <a href="#resume" class="nav-link">Résumé</a>
           <a href="#contact" class="nav-cta">Get in Touch!</a>
           <button id="theme-toggle" class="theme-toggle-nav" aria-label="Toggle theme">
             <i class="fas fa-moon"></i>
@@ -170,8 +178,8 @@
           <h1 class="hero-name">I'm Tanishq Aryan.</h1>
           <p class="hero-description">
             Based in Dehradun, India — I'm a CS student who loves building
-            <strong>backend systems</strong>, <strong>microservices</strong>, and cross-platform apps
-            with Spring Boot, Python & Flutter.
+            <strong>backend systems</strong>, <strong>microservices</strong>, and <strong>AI-powered</strong> full-stack apps
+            with Spring Boot, Spring AI & React.
           </p>
           <div class="hero-social">
             <a href="https://github.com/tanishqaryan9" target="_blank" class="social-btn"><i
@@ -184,6 +192,7 @@
           <div class="hero-cta-container">
             <a href="#contact" class="btn-cta">Get in Touch!</a>
             <a href="#projects" class="btn-cta btn-cta-ghost">View Projects</a>
+            <a href="Tanishq_Aryan_Resume.pdf" download="Tanishq_Aryan_Resume.pdf" class="btn-cta btn-cta-outline"><i class="fas fa-file-arrow-down"></i> Résumé</a>
           </div>
         </div>
         <div class="hero-right">
@@ -240,22 +249,16 @@
         <h2 class="section-title">ABOUT</h2>
         <div class="card">
           <p class="text">
-            I'm a <span class="highlight highlight-orange">Computer Science student</span> at Graphic Era Hill
-            University, Dehradun,
-            with hands-on experience building <span class="highlight highlight-purple">backend systems and microservices
-              architectures</span>.
+            I <span class="highlight highlight-orange">default to ownership</span>: I take the hard, unglamorous parts
+            of a project and see them through to production.
           </p>
           <p class="text">
-            My work spans from crafting scalable <span class="highlight highlight-orange">REST APIs with Spring
-              Boot</span>
-            to building cross-platform mobile apps with <span class="highlight highlight-purple">Flutter and
-              Firebase</span>.
+            I'm a <span class="highlight highlight-purple">learn-it-all, not a know-it-all</span> — most of what I
+            build, I taught myself by shipping real projects.
           </p>
           <p class="text">
-            I bring a <span class="highlight highlight-purple">builder's mindset</span> and a genuine love for
-            solving real engineering problems — from containerising services with <span
-              class="highlight highlight-orange">Docker</span>
-            to shipping apps that real people actually use.
+            I move fast, ask questions early, and try to leave every codebase — and team —
+            <span class="highlight highlight-orange">a little better than I found it</span>.
           </p>
         </div>
       </section>
@@ -291,10 +294,11 @@
               <div class="timeline-item-flat" data-lat="30.3165" data-lng="78.0322">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content-flat">
-                  <h4 class="timeline-title">Flutter & Mobile Development</h4>
+                  <h4 class="timeline-title">AI & Full-Stack Engineering</h4>
                   <p class="timeline-date">2024 – Present</p>
-                  <p class="timeline-description">Picked up Flutter and shipped ReachClock — a location-aware alarm app.
-                    Explored geolocation APIs, Firebase, and cross-platform mobile UX design.</p>
+                  <p class="timeline-description">Built MakeShift — a full-stack GenAI toolkit (chat, image, voice &
+                    recipe generation) on Spring AI + Gemini with a React frontend. Dived into LLM integration, OAuth2
+                    auth, and PostgreSQL.</p>
                   <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Dehradun, India</p>
                 </div>
               </div>
@@ -384,11 +388,40 @@
             </div>
             <div class="tech-tags">
               <span class="tag"><i class="fas fa-robot"></i> AI Integration</span>
+              <span class="tag"><i class="fas fa-brain"></i> Spring AI</span>
+              <span class="tag"><i class="fab fa-google"></i> Gemini</span>
               <span class="tag"><i class="fas fa-desktop"></i> Screen Analysis</span>
-              <span class="tag"><i class="fab fa-react"></i> React (Basic)</span>
+              <span class="tag"><i class="fab fa-react"></i> React</span>
               <span class="tag"><i class="fab fa-python"></i> Automation</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- CODING & STATS -->
+      <section class="section" id="coding">
+        <h2 class="section-title">CODING & STATS</h2>
+        <div class="card stats-card">
+          <p class="stats-intro">Consistent competitive-programming practice and a strong academic record — the
+            fundamentals behind the projects.</p>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-number-wrap"><span class="stat-number" data-target="300" data-suffix="+">0</span></div>
+              <p class="stat-label">LeetCode Problems Solved</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number-wrap"><span class="stat-prefix">~</span><span class="stat-number"
+                  data-target="1610">0</span></div>
+              <p class="stat-label">Peak Contest Rating</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number-wrap"><span class="stat-number" data-target="8.03"
+                  data-decimals="2">0</span><span class="stat-unit">/10</span></div>
+              <p class="stat-label">CGPA · B.Tech CSE</p>
+            </div>
+          </div>
+          <a href="https://leetcode.com/u/tanishq_aryan22" target="_blank" class="creator-github stats-cta"><i
+              class="fas fa-code"></i> View LeetCode Profile</a>
         </div>
       </section>
 
@@ -402,7 +435,7 @@
             <div class="project-card-inner">
               <div class="project-icon-ta"><i class="fas fa-briefcase"></i></div>
               <h3 class="project-name-ta">JobHunt</h3>
-              <p class="project-desc-ta">A job posting platform for blue-collar workers — connecting daily-wage workers
+              <p class="project-desc-ta">A job-posting platform for blue-collar workers — connecting daily-wage workers
                 with local job opportunities.</p>
               <div class="tech-tags">
                 <span class="tag">Spring Boot</span>
@@ -411,30 +444,38 @@
                 <span class="tag">MySQL</span>
                 <span class="tag">Docker</span>
               </div>
-              <a href="https://github.com/tanishqaryan9/Job-Posting" target="_blank" class="creator-github"><i
-                  class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-
-          <div class="project-card-ta">
-            <div class="project-card-top purple-top"></div>
-            <div class="project-card-inner">
-              <div class="project-icon-ta purple-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <h3 class="project-name-ta">ReachClock</h3>
-              <p class="project-desc-ta">A smart location-aware alarm that rings when you approach your destination — no
-                more missing your stop.</p>
-              <div class="tech-tags">
-                <span class="tag">Flutter</span>
-                <span class="tag">Dart</span>
-                <span class="tag">Geolocation</span>
-                <span class="tag">Firebase</span>
-              </div>
-              <a href="https://github.com/tanishqaryan9" target="_blank" class="creator-github"><i
+              <a href="https://github.com/tanishqaryan9/Job-Posting/releases" target="_blank" class="creator-github"><i
                   class="fab fa-github"></i> GitHub</a>
             </div>
           </div>
 
           <div class="project-card-ta featured-project">
+            <div class="project-card-top purple-top"></div>
+            <div class="project-card-inner">
+              <span class="featured-ribbon">Featured</span>
+              <div class="project-icon-ta purple-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+              <h3 class="project-name-ta">MakeShift</h3>
+              <p class="project-desc-ta">A full-stack GenAI toolkit that bundles four tools into one app — an AI chat
+                assistant, text-to-image generation, a voice studio (speech-to-text &amp; text-to-speech), and a recipe
+                creator — secured with Google/GitHub OAuth2 &amp; JWT.</p>
+              <div class="tech-tags">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Spring AI</span>
+                <span class="tag">Gemini</span>
+                <span class="tag">React</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/tanishqaryan9/makeshift" target="_blank" class="creator-github"><i
+                    class="fab fa-github"></i> GitHub</a>
+                <a href="https://makeshift-blond.vercel.app" target="_blank" class="creator-github creator-live"><i
+                    class="fas fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card-ta">
             <div class="project-card-top orange-top"></div>
             <div class="project-card-inner">
               <div class="project-icon-ta"><i class="fas fa-robot"></i></div>
@@ -469,6 +510,7 @@
                 <span class="badge">2024 – Present</span>
               </div>
               <p class="education-location"><i class="fas fa-map-marker-alt"></i> Dehradun, Uttarakhand, India</p>
+              <div class="education-cgpa"><i class="fas fa-award"></i> CGPA <strong>8.03</strong> <span>/ 10</span></div>
             </div>
           </div>
           <div class="languages-column">
@@ -495,13 +537,34 @@
         </div>
       </section>
 
+      <!-- RÉSUMÉ -->
+      <section class="section" id="resume">
+        <h2 class="section-title">RÉSUMÉ</h2>
+        <div class="card resume-card">
+          <div class="resume-info">
+            <div class="resume-icon"><i class="fas fa-file-lines"></i></div>
+            <div>
+              <h3 class="resume-heading">One page. The whole story.</h3>
+              <p class="resume-note">Education, projects, tech stack, and achievements — the full picture in a single
+                page. Grab a copy or open it right in your browser.</p>
+            </div>
+          </div>
+          <div class="resume-actions">
+            <a href="Tanishq_Aryan_Resume.pdf" download="Tanishq_Aryan_Resume.pdf" class="btn-resume"><i
+                class="fas fa-file-arrow-down"></i> Download Résumé</a>
+            <a href="Tanishq_Aryan_Resume.pdf" target="_blank" rel="noopener" class="creator-github"><i
+                class="fas fa-arrow-up-right-from-square"></i> View PDF</a>
+          </div>
+        </div>
+      </section>
+
       <!-- CONTACT -->
       <section class="section" id="contact">
         <h2 class="section-title">GET IN TOUCH</h2>
         <div class="contact-container-compact">
           <p class="contact-intro">Open to internships, collabs, and interesting projects — drop me a line!</p>
           <div class="contact-grid">
-            <a href="https://mail.google.com/mail/?view=cm&to=aryantanishq123@gmail.com" target="_blank"` class="contact-card"><i
+            <a href="https://mail.google.com/mail/?view=cm&to=aryantanishq123@gmail.com" target="_blank" class="contact-card"><i
                 class="fas fa-envelope"></i><span>Email</span></a>
             <a href="https://linkedin.com/in/tanishq-aryan-3a4a22311/" target="_blank" class="contact-card"><i
                 class="fab fa-linkedin"></i><span>LinkedIn</span></a>
@@ -526,7 +589,8 @@
               <a href="#experience">Journey</a>
               <a href="#skills">Skills</a>
               <a href="#projects">Projects</a>
-            </div>`
+              <a href="#resume">Résumé</a>
+            </div>
             <div class="footer-social-compact">
               <a href="https://github.com/tanishqaryan9" target="_blank"><i class="fab fa-github"></i></a>
               <a href="https://linkedin.com/in/tanishq-aryan-3a4a22311/" target="_blank"><i
@@ -536,7 +600,7 @@
             </div>
           </div>
           <div class="footer-bottom-compact">
-            <span>© 2025 Tanishq Aryan — Built from scratch</span>
+            <span>© 2026 Tanishq Aryan — Built from scratch</span>
           </div>
         </div>
       </footer>
